@@ -1,18 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
-public class ZenjectSample : MonoBehaviour
+namespace xrdnk.UnityPubSubSample.Zenject
 {
-    // Start is called before the first frame update
-    void Start()
+    public class UserJoinedSignal
     {
-        
+        public string UserName;
     }
 
-    // Update is called once per frame
-    void Update()
+    public class GameInitializer : IInitializable
     {
-        
+        private readonly SignalBus _signalBus;
+
+        public GameInitializer(SignalBus signalBus)
+        {
+            _signalBus = signalBus;
+        }
+
+        public void Initialize()
+        {
+            _signalBus.Fire(new UserJoinedSignal{ UserName = "Denik" });
+        }
+    }
+
+    public class Greeter
+    {
+        public void SayHello(UserJoinedSignal userJoinedInfo)
+        {
+            Debug.Log($"Hello {userJoinedInfo.UserName}!");
+        }
     }
 }
