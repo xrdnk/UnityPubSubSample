@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace xrdnk.UnityPubSubSample.MessagePipe
 {
-    public class PublishView : MonoBehaviour
+    public sealed class PublishView : MonoBehaviour
     {
         [SerializeField] InputField _inputField;
         [SerializeField] Button _button;

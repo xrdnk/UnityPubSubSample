@@ -2,7 +2,7 @@
 
 namespace xrdnk.UnityPubSubSample.MessageBroker
 {
-    public class SampleInstaller : MonoInstaller<SampleInstaller>
+    public sealed class SampleInstaller : MonoInstaller<SampleInstaller>
     {
         public override void InstallBindings()
         {

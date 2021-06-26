@@ -5,7 +5,7 @@ using Zenject;
 
 namespace xrdnk.UnityPubSubSample.MessageBroker
 {
-    public class HelloWorldService : IInitializable, IDisposable
+    public sealed class HelloWorldService : IInitializable, IDisposable
     {
         readonly StringReactiveProperty _userNameRp = new StringReactiveProperty();
         public IReadOnlyReactiveProperty<string> UserNameProperty => _userNameRp;

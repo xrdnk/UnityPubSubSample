@@ -4,7 +4,7 @@ using Zenject;
 
 namespace xrdnk.UnityPubSubSample.MessageBroker
 {
-    public class PubSubPresenter : IInitializable, IDisposable
+    public sealed class PubSubPresenter : IInitializable, IDisposable
     {
         readonly HelloWorldService _service;
         readonly PublishView _view;

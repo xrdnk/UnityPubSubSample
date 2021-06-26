@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace xrdnk.UnityPubSubSample.ZenjectSignal
+namespace xrdnk.UnityPubSubSample.ZenjectSignals
 {
     public sealed class SampleInstaller : MonoInstaller<SampleInstaller>
     {

@@ -1,6 +1,6 @@
 ﻿namespace xrdnk.UnityPubSubSample.MessageBroker
 {
-    public class StartSignal
+    public sealed class StartSignal
     {
         public string UserName;
     }

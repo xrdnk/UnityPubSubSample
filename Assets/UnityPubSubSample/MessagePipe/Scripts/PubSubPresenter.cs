@@ -3,7 +3,7 @@ using UniRx;
 
 namespace xrdnk.UnityPubSubSample.MessagePipe
 {
-    public class PubSubPresenter : Zenject.IInitializable, VContainer.Unity.IInitializable, IDisposable
+    public sealed class PubSubPresenter : Zenject.IInitializable, VContainer.Unity.IInitializable, IDisposable
     {
         readonly HelloWorldService _service;
         readonly PublishView _view;

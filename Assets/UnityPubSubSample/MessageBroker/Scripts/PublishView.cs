@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace xrdnk.UnityPubSubSample.MessageBroker
 {
-    public class PublishView : MonoBehaviour
+    public sealed class PublishView : MonoBehaviour
     {
         [SerializeField] InputField _inputField;
         [SerializeField] Button _button;

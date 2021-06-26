@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace xrdnk.UnityPubSubSample.MessagePipe
 {
-    public class HelloWorldService : Zenject.IInitializable, VContainer.Unity.IInitializable, IDisposable
+    public sealed class HelloWorldService : Zenject.IInitializable, VContainer.Unity.IInitializable, IDisposable
     {
         readonly ISubscriber<StartSignal> _startSubscriber;
 

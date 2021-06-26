@@ -2,7 +2,7 @@
 using UniRx;
 using Zenject;
 
-namespace xrdnk.UnityPubSubSample.ZenjectSignal
+namespace xrdnk.UnityPubSubSample.ZenjectSignals
 {
     public sealed class PubSubPresenter : IInitializable, IDisposable
     {

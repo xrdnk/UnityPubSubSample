@@ -4,7 +4,7 @@ using VContainer.Unity;
 
 namespace xrdnk.UnityPubSubSample.MessagePipe
 {
-    public class SampleLifetimeScope : LifetimeScope
+    public sealed class SampleLifetimeScope : LifetimeScope
     {
         protected override void Configure(IContainerBuilder builder)
         {

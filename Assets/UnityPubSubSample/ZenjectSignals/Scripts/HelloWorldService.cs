@@ -3,7 +3,7 @@ using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace xrdnk.UnityPubSubSample.ZenjectSignal
+namespace xrdnk.UnityPubSubSample.ZenjectSignals
 {
     public sealed class HelloWorldService : IInitializable, IDisposable
     {

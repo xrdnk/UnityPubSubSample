@@ -1,4 +1,4 @@
-﻿namespace xrdnk.UnityPubSubSample.ZenjectSignal
+﻿namespace xrdnk.UnityPubSubSample.ZenjectSignals
 {
     public sealed class StartSignal
     {

@@ -3,7 +3,7 @@ using Zenject;
 
 namespace xrdnk.UnityPubSubSample.MessagePipe
 {
-    public class SampleInstaller : MonoInstaller<SampleInstaller>
+    public sealed class SampleInstaller : MonoInstaller<SampleInstaller>
     {
         public override void InstallBindings()
         {
