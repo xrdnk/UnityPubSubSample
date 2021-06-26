@@ -2,7 +2,7 @@ using Zenject;
 
 namespace xrdnk.UnityPubSubSample.ZenjectSignal
 {
-    public sealed class PubSubSampleInstaller : MonoInstaller<PubSubSampleInstaller>
+    public sealed class SampleInstaller : MonoInstaller<SampleInstaller>
     {
         public override void InstallBindings()
         {
