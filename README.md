@@ -36,4 +36,4 @@ Copyright (c) 2021 Yoshifumi Kawai / Cysharp, Inc.
 
 ## Licence
 
-Unlicense.
+MIT Licence
