@@ -10,11 +10,11 @@ namespace xrdnk.UnityPubSubSample.ZenjectSignal
             SignalBusInstaller.Install(Container);
             Container.DeclareSignal<StartSignal>().RequireSubscriber();
             // Service
-            Container.Bind<HelloWorldService>().AsSingle();
+            Container.BindInterfacesAndSelfTo<HelloWorldService>().AsSingle();
             // View
             Container.Bind<PublishView>().FromComponentInHierarchy().AsCached();
             // Presenter
-            Container.BindInterfacesTo<PubSubPresenter>().AsSingle();
+            Container.BindInterfacesAndSelfTo<PubSubPresenter>().AsSingle();
         }
     }
 }

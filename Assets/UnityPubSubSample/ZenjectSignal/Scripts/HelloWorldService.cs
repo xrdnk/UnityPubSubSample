@@ -12,6 +12,7 @@ namespace xrdnk.UnityPubSubSample.ZenjectSignal
         readonly StringReactiveProperty _userNameRp = new StringReactiveProperty();
         public IReadOnlyReactiveProperty<string> UserNameProperty => _userNameRp;
 
+        [Inject]
         public HelloWorldService(SignalBus signalBus)
         {
             _signalBus = signalBus;
