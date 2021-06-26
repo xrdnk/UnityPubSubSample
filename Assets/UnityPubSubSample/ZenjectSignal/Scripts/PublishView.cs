@@ -1,23 +1,28 @@
-﻿using System;
-using UniRx;
+﻿using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace xrdnk.UnityPubSubSample.ZenjectSignal
 {
-    public class PublishView : MonoBehaviour
+    public sealed class PublishView : MonoBehaviour
     {
         [SerializeField] InputField _inputField;
         [SerializeField] Button _button;
         [SerializeField] Text _text;
 
-        readonly Subject<string> _fireSubject = new Subject<string>();
-        public IObservable<string> OnFiredAsObservable() => _fireSubject;
+        SignalBus _signalBus;
+
+        [Inject]
+        public void Construct(SignalBus signalBus)
+        {
+            _signalBus = signalBus;
+        }
 
         void Awake()
         {
             _button.OnClickAsObservable()
-                .Subscribe(_ => _fireSubject.OnNext(_inputField.text))
+                .Subscribe(_ => _signalBus.Fire(new StartSignal {UserName = _inputField.text}))
                 .AddTo(this);
         }
 
