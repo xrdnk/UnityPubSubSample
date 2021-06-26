@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
+    "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer",
+    "com.cysharp.messagepipe.zenject": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.Zenject",
+    "com.cysharp.unitask": "2.2.5",
+    "com.neuecc.unirx": "7.1.0",
     "com.svermeulen.extenject": "9.2.0-stcf3",
     "com.unity.collab-proxy": "1.5.7",
     "com.unity.ide.rider": "2.0.7",
@@ -10,6 +15,7 @@
     "com.unity.timeline": "1.4.8",
     "com.unity.toolchain.win-x86_64-linux-x86_64": "0.1.20-preview",
     "com.unity.ugui": "1.0.0",
+    "jp.hadashikick.vcontainer": "1.8.4",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -40,17 +46,18 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.neuecc.unirx": "7.1.0"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.cysharp.unitask",
         "com.neuecc.unirx",
         "com.openupm",
-        "com.svermeulen.extenject"
+        "com.svermeulen.extenject",
+        "jp.hadashikick.vcontainer"
       ]
     }
   ]
