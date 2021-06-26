@@ -33,3 +33,7 @@ Copyright (c) 2020 hadashiA
 * [MessagePipe 1.6.1](https://github.com/Cysharp/MessagePipe)
 
 Copyright (c) 2021 Yoshifumi Kawai / Cysharp, Inc.
+
+## Licence
+
+Unlicense.
