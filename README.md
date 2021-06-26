@@ -1,9 +1,7 @@
 # UnityPubSubSample
 
-Unity の Pub / Sub サンプル．
-名前を入力してボタン押下したらハロワが出ます．
-
-以下のサンプルが入っています．
+Samples of Pub/Sub Messaging for Unity.
+The following samples are included.
 
 - MessagePipe.VContainer
 - MessagePipe.Zenject
